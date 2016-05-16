@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- CM replacements -->
+	    <remove-project name="CyanogenMod/android_packages_apps_Bluetooth" />
+    <project path="packages/apps/Bluetooth" name="KlinkOnE/android_packages_apps_Bluetooth---daniel" revision="cm-11.0" />
+
+    
+    <remove-project name="CyanogenMod/android_frameworks_av" />
+    <project path="frameworks/av" name="legaCyMod/android_frameworks_av" revision="cm-11.0" />
+    
+    <remove-project name="CyanogenMod/android_frameworks_native" />
+    <project path="frameworks/native" name="legaCyMod/android_frameworks_native" revision="cm-11.0" />	
+    
+    <remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
+    <project path="hardware/libhardware_legacy" name="legaCyMod/android_hardware_libhardware_legacy" revision="cm-11.0" />
+    
+    <remove-project name="CyanogenMod/android_external_bluetooth_bluedroid" />
+    <remove-project name="CyanogenMod/android_packages_apps_CMUpdater" />	
+
+    <remove-project name="CyanogenMod/android_art" />
+    <project path="art" name="ArchiDroid/android_art" revision="cm-11.0" />
+
+    <!-- Local projects -->
+    <project path="hardware/atheros/wlan" name="legaCyMod/android_hardware_atheros_wlan" revision="cm-11.0" />
+    <project path="hardware/qcom/display-legacy" name="legaCyMod/android_hardware_qcom_display-legacy" revision="cm-11.0" />
+    <project path="hardware/qcom/media-legacy" name="legaCyMod/android_hardware_qcom_media-legacy" revision="cm-11.0" />
+    <project path="external/bluetooth/bluez" name="KlinkOnE/android_external_bluetooth_bluez" revision="master" />
+    <project path="external/bluetooth/sbc" name="KlinkOnE/android_external_bluetooth_sbc" revision="master" />
+    <project path="external/bluetooth/glib" name="KlinkOnE/android_external_bluetooth_glib" revision="master" />
+    
+    <!-- Additional remotes -->
+    <remote name="google" fetch="https://android.googlesource.com/" />
+    
+    <!-- Toolchain -->
+    <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="google" revision="master" />
+    <project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="google" revision="master" />
+</manifest>
