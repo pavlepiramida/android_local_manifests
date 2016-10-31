@@ -2,12 +2,11 @@
 <manifest>
 
     <!-- CM replacements -->
-	    <remove-project name="CyanogenMod/android_packages_apps_Bluetooth" />
+    <remove-project name="CyanogenMod/android_packages_apps_Bluetooth" />
     <project path="packages/apps/Bluetooth" name="KlinkOnE/android_packages_apps_Bluetooth---daniel" revision="cm-11.0" />
-
-    
+       
     <remove-project name="CyanogenMod/android_frameworks_av" />
-    <project path="frameworks/av" name="legaCyMod/android_frameworks_av" revision="cm-11.0" />
+    <project path="frameworks/av" name="kengnatural/android_frameworks_av" revision="cm-11.0" />
     
     <remove-project name="CyanogenMod/android_frameworks_native" />
     <project path="frameworks/native" name="legaCyMod/android_frameworks_native" revision="cm-11.0" />	
@@ -15,11 +14,16 @@
     <remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
     <project path="hardware/libhardware_legacy" name="legaCyMod/android_hardware_libhardware_legacy" revision="cm-11.0" />
     
-    <remove-project name="CyanogenMod/android_external_bluetooth_bluedroid" />
-    <remove-project name="CyanogenMod/android_packages_apps_CMUpdater" />	
-
     <remove-project name="CyanogenMod/android_art" />
     <project path="art" name="ArchiDroid/android_art" revision="cm-11.0" />
+
+
+    <!-- Removed CM projects -->
+    <remove-project name="CyanogenMod/android_external_bluetooth_bluedroid" />
+    <remove-project name="CyanogenMod/android_packages_apps_CMUpdater" />
+    <remove-project name="CyanogenMod/android_packages_apps_CMAccount" />
+    <remove-project name="CyanogenMod/android_packages_apps_VideoEditor" />
+    
 
     <!-- Local projects -->
     <project path="hardware/atheros/wlan" name="legaCyMod/android_hardware_atheros_wlan" revision="cm-11.0" />
