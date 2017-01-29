@@ -2,7 +2,7 @@
 <manifest>
     <!-- GT-S7560M -->
     <project path="device/samsung/kylessopen" name="pavlepiramida/android_device_samsung_kylessopen" revision="S7560/m" />
-    <project path="kernel/samsung/kylessopen" name="pavlepiramida/android_kernel_ba2x_2.0-1" revision="master" />
+    <project path="kernel/samsung/kylessopen" name="pavlepiramida/FrankenKernel" revision="master" />
     <project path="vendor/samsung/kylessopen" name="pavlepiramida/android_vendor_samsung_kylessopen" revision="master"/>
 
     <!-- FM Radio -->
