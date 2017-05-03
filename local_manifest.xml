@@ -2,10 +2,40 @@
 <manifest>
     <!-- GT-S7560M Device tree-->
     <project path="device/samsung/kylessopen" name="pavlepiramida/android_device_samsung_kylessopen" revision="S7560/m" />
-    <project path="kernel/samsung/kylessopen" name="KylessPAC/FrankenKernel" revision="test" />
+    <project path="kernel/samsung/kylessopen" name="pavlepiramida/FrankenKernel" revision="master" />
     <project path="vendor/samsung/kylessopen" name="pavlepiramida/android_vendor_samsung_kylessopen" revision="master"/>
 
     <!-- CM replacements -->
+	<remove-project path="dalvik" name="CyanogenMod/android_dalvik" />
+	<project path="dalvik" name="pavlepiramida/android_dalvik" revision="cm-11.0" />
+
+	<remove-project path="hardware/cm" name="CyanogenMod/android_hardware_cm" />
+	<project path="hardware/cm" name="pavlepiramida/android_hardware_cm" revision="cm-11.0" />
+
+	<remove-project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" />
+	<project path="bionic" name="pavlepiramida/android_bionic" revision="cm-11.0" />
+
+	<remove-project path="external/chromium_org" name="CyanogenMod/android_external_chromium_org" />
+	<project path="external/chromium_org" name="pavlepiramida/android_external_chromium_org" />
+
+	<remove-project path="external/valgrind" name="CyanogenMod/android_external_valgrind" groups="pdk" />
+	<project path="external/valgrind" name="pavlepiramida/android_external_valgrind" revision="cm-11.0" />
+
+	<remove-project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" groups="pdk" />
+	<project path="hardware/libhardware" name="pavlepiramida/android_hardware_libhardware" revision="cm-11.0" />
+
+    <remove-project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" groups="pdk" />
+	<project path="hardware/libhardware_legacy" name="pavlepiramida/android_hardware_libhardware_legacy" revision="cm-11.0" />
+
+	<remove-project path="system/vold" name="CyanogenMod/android_system_vold" groups="pdk" />
+	<project path="system/vold" name="pavlepiramida/android_system_vold" revision="cm-11.0" />
+
+	<remove-project path="system/core" name="CyanogenMod/android_system_core" groups="pdk" />
+	<project path="system/core" name="pavlepiramida/android_system_core" revision="cm-11.0" />
+
+    <remove-project path="packages/apps/Settings" name="CyanogenMod/android_packages_apps_Settings" />
+	<project path="packages/apps/Settings" name="pavlepiramida/android_packages_apps_Settings" revision="cm-11.0" />
+
     <remove-project name="CyanogenMod/android_packages_apps_Bluetooth" />
     <project path="packages/apps/Bluetooth" name="KlinkOnE/android_packages_apps_Bluetooth---daniel" revision="cm-11.0" />
        
@@ -21,10 +51,7 @@
 
     <remove-project name="CyanogenMod/android_frameworks_base" />
     <project path="frameworks/base" name="pavlepiramida/android_frameworks_base" revision="cm-11.0" />
-    
-    <remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
-    <project path="hardware/libhardware_legacy" name="legaCyMod/android_hardware_libhardware_legacy" revision="cm-11.0" />
-    
+  
     <remove-project name="CyanogenMod/android_art" />
     <project path="art" name="ArchiDroid/android_art" revision="cm-11.0" />
 
